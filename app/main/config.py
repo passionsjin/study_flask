@@ -16,7 +16,7 @@ class DevelopmentConfig(Config):
     # SQLALCHEMY_DATABASE_URI = postgres_local_base
     DEBUG = True
     # SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'flask_boilerplate_main.db')
-    SQLALCHEMY_DATABASE_URI = 'mysql://root:1234@localhost/testdb'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:1234@localhost/testdb'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
