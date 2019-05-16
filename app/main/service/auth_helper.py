@@ -35,10 +35,10 @@ class Auth:
 
     @staticmethod
     def logout_user(data):
-        if data:
-            auth_token = data.split(" ")[1]
-        else:
-            auth_token = ''
+        # if data:
+        #     auth_token = data.split(" ")[1]
+        # else:
+        #     auth_token = ''
         if auth_token:
             resp = User.decode_auth_token(auth_token)
             if not isinstance(resp, str):
