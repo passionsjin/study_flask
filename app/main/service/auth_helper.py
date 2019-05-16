@@ -34,7 +34,8 @@ class Auth:
             return response_object, 500
 
     @staticmethod
-    def logout_user(auth_token):
+    def logout_user(data):
+        auth_token = data
         # if data:
         #     auth_token = data.split(" ")[1]
         # else:
