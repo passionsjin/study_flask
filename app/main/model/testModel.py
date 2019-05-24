@@ -1,9 +1,7 @@
 
 from .. import db, flask_bcrypt
 import datetime
-from app.main.model.blacklist import BlacklistToken
 from ..config import key
-import jwt
 
 
 class TestModel(db.Model):
