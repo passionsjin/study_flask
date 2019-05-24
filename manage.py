@@ -8,7 +8,7 @@ from app import blueprint
 from app.main import create_app, db
 from app.main.model import user
 from app.main.model import blacklist
-from app.main.model import testModel
+from app.main.model import tenants
 
 
 app = create_app(os.getenv('BOILERPLATE_ENV') or 'dev')

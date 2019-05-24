@@ -4,12 +4,13 @@ import datetime
 from ..config import key
 
 
-class TestModel(db.Model):
+class Tenants(db.Model):
     """ User Model for storing user related details """
-    __tablename__ = "testModel"
+    __tablename__ = "tenants"
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    testdata = db.Column(db.String(255), unique=True, nullable=False)
+    u_id = db.Column(db.String(100), unique=True)
+    tenant_id = db.Column(db.String(100), unique=True, nullable=False)
     createAt = db.Column(db.DateTime, nullable=False)
 
     def __repr__(self):
